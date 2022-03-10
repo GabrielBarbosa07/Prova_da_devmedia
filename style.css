@@ -10,12 +10,20 @@ body{
 
 /* Cabeçalho */
 header{
+    
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     background-color: rgba(245, 245, 245, 0.865);
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.198);
     
+}
+#check{
+    display: none;
+}
+.checkbtn{
+    display: none;
+    font-size: 30px;
 }
 .menu{
     width: 100%;
@@ -89,17 +97,16 @@ form>button:hover{
 
 @media (max-width:680px) {
     header{
+        height: 200px;
         flex-direction: column;
         flex-wrap: wrap;
     }
     .menu{
-        flex-direction: column;
-        width: 100%;
-        justify-content: center;
         margin: auto 10;
     }
     .menu>.link{
-    flex-wrap: wrap;
+    
+    display: block;
     text-align: center;
     margin-top: 15px;
     
@@ -107,6 +114,7 @@ form>button:hover{
     .menu>.link>a{
         margin-right: 13px;
     }
+    
 }
 /* Fim da parte responsiva*/
 
